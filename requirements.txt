@@ -1,0 +1,9 @@
+# (c) @AmznUsers | Jordan Gill
+
+Pyrogram==2.0.106
+TgCrypto==1.2.5
+aiofiles==23.2.1
+pymongo==4.6.1
+pyromod==2.1.0
+requests==2.31.0
+fake-useragent==1.3.0

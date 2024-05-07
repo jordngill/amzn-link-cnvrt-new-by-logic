@@ -1,0 +1,55 @@
+{
+    "name": "Amazon Bot",
+    "description": "A simple bot to generate your Amazon Affiliate links.",
+    "logo": "",
+    "keywords": [
+        "Pyrogram",
+        "bot",
+        "Amazon Bot",
+        "Telegram Bot",
+        "MovieGrade"
+    ],
+    "website": "https://t.me/AmznUsers",
+    "repository": "https://github.com/jordngill/amzn-link-cnvrt",
+    "success_url": "https://github.com/jordngill",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "You Telegram Bot Token from @BotFather",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Your API Hash from my.telegram.org",
+            "required": true
+        },
+        "API_ID": {
+            "description": "Your APP ID from my.telegram.org",
+            "required": true
+        },
+        "DB_URL": {
+            "description": "MongoDB.com database url",
+            "required": true
+        },
+        "DB_NAME": {
+            "description": "A database name without white space(example : Amazon-Bot)",
+            "value": "Amazon-Bot",
+            "required": false
+        },
+        "AUTH_USERS": {
+            "description": "Create a list of User Ids to use this bot(ADMINS). Seperate by space. At least one required.",
+            "required": true
+        },
+        "LOG_CHANNEL": {
+            "description": "ID of a Channel which you want to RECEIVE LOGS.",
+            "required": true
+        }
+    },
+    "buildpacks": [
+        {"url": "heroku/python"}
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
