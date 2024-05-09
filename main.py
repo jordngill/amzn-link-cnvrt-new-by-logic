@@ -1,5 +1,5 @@
 # (c) @AmznUsers | Jordan Gill
-#Fixed
+#Fixedddddddddd
 
 import asyncio
 import os ,sys
