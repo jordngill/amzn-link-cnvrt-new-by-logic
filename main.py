@@ -1,5 +1,4 @@
 # (c) @AmznUsers | Jordan Gill
-#Fixedddddddddd
 
 import asyncio
 import os ,sys
@@ -30,8 +29,9 @@ from pyrogram.errors import (
 from handlers.check_user import handle_user_status
 from handlers.database import Database
 from handlers.amazon import Amazon
-
 from utils.extractors import extract_links
+from aiohttp import web
+from route import web_server
 
 LOG_CHANNEL = config.LOG_CHANNEL
 AUTH_USERS = config.AUTH_USERS
@@ -1063,6 +1063,9 @@ async def new_message(client: Client, m: Message, admin_id: int):
 
 async def start_userbots():
     await Bot.start()
+    app = web.AppRunner(await web_server())
+    await app.setup()       
+    await web.TCPSite(app, "0.0.0.0", 8080).start()
     print(f"@{(await Bot.get_me()).username} is successfully started.")
 
     
