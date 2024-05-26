@@ -442,7 +442,7 @@ async def addChannelToDB(bot: Client, message: Message):
 async def addCopyChannelToDB(bot: Client, message: Message):
     if db.get_forwardauthuser(message.from_user.id) != "authorised":
         print(db.get_forwardauthuser(message.from_user.id))
-        return await message.reply("You aren't authorized to use Auto Forward feature.", quote=True)
+        return await message.reply("__You dont have access to use **Link Forwarding feature** of bot.😢__ \n\n **Contact 👉 @AmznUsers To Get Access..😊", quote=True)
 
     if len(message.command) == 1:
         await message.reply(
