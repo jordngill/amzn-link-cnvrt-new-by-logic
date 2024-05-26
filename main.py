@@ -879,7 +879,7 @@ async def amazon_links(bot: Client, message: Message):
     if BOT_TYPE_PUBLIC is False:
         if db.get_forwardauthuser(chat_id) != "authorised":
             return await message.reply(
-                "__You dont have access to use **Link Forwarding feature** of bot.😢__ \n\n **Contact 👉 @AmznUsers To Get Access..😊**", 
+                "__You dont have access to use **Amazon Tag Feature** of bot.😢__ \n\n **Contact 👉 @AmznUsers To Get Access..😊**", 
                 quote=True
             )
 
