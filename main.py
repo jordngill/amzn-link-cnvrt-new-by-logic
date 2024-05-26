@@ -398,7 +398,7 @@ async def addChannelToDB(bot: Client, message: Message):
         #     return await message.reply("The Chat ID should of a channel only.\n\nAdd the bot to the channel and send /id to get the channel ID.", quote=True)
 
         if len(db.get_all_forward_channel(message.from_user.id)) == int(FORWARD_CHANNEL_NUMBER):
-            return await message.reply(f"**Oops Max limit of adding forward channel is get exceeded.**\nSo first remove already added forward channel using /remove_autopost. \n\n Contact 👉 @AvishkarBots if you feels it bug.", quote=True)
+            return await message.reply(f"**Oops Max limit of adding forward channel is get exceeded.**\nSo first remove already added forward channel using /remove_autopost. \n\n Contact 👉 @AmznUsers if you feels it bug.", quote=True)
 
         db.add_forward_channel(message.from_user.id, {"id": channel.id, "title": channel.title})
         await message.reply(f"Successfully added `{channel.title} ({channel.id})` to the Database for Amazon Links Forwarding.", quote=True)
