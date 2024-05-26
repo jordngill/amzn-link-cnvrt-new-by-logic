@@ -994,7 +994,7 @@ async def new_message(client: Client, m: Message, admin_id: int):
                     )
 
             if error == 0:
-                footer_channel = db.get_custom_footer_channel(admin_id) or 'AmznUsers'
+                footer_channel = db.get_custom_footer_channel(admin_id) or 'ABCD'
                 oldMessage += f"\n\nShared by @{footer_channel.lstrip('@')}"
                 print("oldd")
                 print(oldMessage)
