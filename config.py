@@ -6,7 +6,7 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN", "6580477946:AAEo69sgCMbUid4Hi5UGcVphiwAb
 API_ID = int(os.environ.get("API_ID", "12936189"))
 API_HASH = os.environ.get("API_HASH", "7e24008e8ec33a397155b6a9d618497b")
 LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001877793174"))
-AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "1166670205 6698453636").split())
+AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "1166670205").split())
 DB_URL = os.environ.get("DB_URL", "mongodb+srv://Gill:Gill@cluster0.gfqiphu.mongodb.net/?retryWrites=true&w=majority")
 DB_NAME = os.environ.get("DB_NAME", "Amazon_Working")
 AMAZON_TLD = os.environ.get("AMAZON_TLD", "in")
