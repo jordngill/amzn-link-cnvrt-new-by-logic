@@ -848,7 +848,7 @@ async def amazon_links(bot: Client, message: Message):
             f"Found `{len(links)}` links.\n\n**📝 Files copy stats:**\n\n**Successfully:** `{success}/{len(links)}`\n**Errors:** `{error}/{len(links)}`\n**Replication:** `{duplicate}/{len(links)}`"
         )
 
-    footer_channel = db.get_custom_footer_channel(message.from_user.id) or 'ABCD'
+    footer_channel = db.get_custom_footer_channel(message.from_user.id) or 'AmznUsers'
     oldMessage += f"\n\nShared by @{footer_channel.lstrip('@')}"
 
     stats = (
@@ -994,8 +994,8 @@ async def new_message(client: Client, m: Message, admin_id: int):
                     )
 
             if error == 0:
-                footer_channel = db.get_custom_footer_channel(admin_id) or 'AmznUsers'
-                oldMessage += f"\n\nShared by @{footer_channel.lstrip('@')}"
+                footer_channel = db.get_custom_footer_channel(admin_id) or ''
+                oldMessage += f"\n\n @{footer_channel.lstrip('@')}"
                 print("oldd")
                 print(oldMessage)
 
