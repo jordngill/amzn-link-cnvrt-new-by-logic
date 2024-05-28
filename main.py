@@ -995,7 +995,7 @@ async def new_message(client: Client, m: Message, admin_id: int):
 
             if error == 0:
                 footer_channel = db.get_custom_footer_channel(admin_id) or ''
-                oldMessage += f"\n\n @{footer_channel.lstrip('@')}"
+                oldMessage += f"\n\n{footer_channel.lstrip('')}"
                 print("oldd")
                 print(oldMessage)
 
