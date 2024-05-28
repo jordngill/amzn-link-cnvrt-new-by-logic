@@ -848,7 +848,7 @@ async def amazon_links(bot: Client, message: Message):
             f"Found `{len(links)}` links.\n\n**📝 Files copy stats:**\n\n**Successfully:** `{success}/{len(links)}`\n**Errors:** `{error}/{len(links)}`\n**Replication:** `{duplicate}/{len(links)}`"
         )
 
-    footer_channel = db.get_custom_footer_channel(message.from_user.id) or 'AmznUsers'
+    footer_channel = db.get_custom_footer_channel(message.from_user.id) or 'ABCD'
     oldMessage += f"\n\nShared by @{footer_channel.lstrip('@')}"
 
     stats = (
