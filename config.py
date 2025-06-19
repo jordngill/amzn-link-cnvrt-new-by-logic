@@ -11,7 +11,7 @@ DB_URL = os.environ.get("DB_URL", "mongodb+srv://gill1322:gill1322@amazondb.rqg9
 DB_NAME = os.environ.get("DB_NAME", "AmazonDB")
 AMAZON_TLD = os.environ.get("AMAZON_TLD", "in")
 AMAZON_TAG = os.getenv("AMAZON_TAG", "gillharyana0e-21")
-FORWARD_CHANNEL_NUMBER = os.getenv("FORWARD_CHANNEL_NUMBER", -1001443110693, -1001694529984)
+FORWARD_CHANNEL_NUMBER = os.getenv("FORWARD_CHANNEL_NUMBER", -1001443110693)
 BOT_TYPE_PUBLIC = os.getenv("BOT_TYPE_PUBLIC", "False").lower() == "true"
 COOKIES = os.environ.get("COOKIES", 'ubid-acbin=260-2754458-7012255;x-acbin="8ZtF2K2r7?p?UQUgbSuQMu??lAkXupXz4gSwS@EuQbwyI8SJ?SWPH5h@2nKF3IkT";at-acbin=Atza|IwEBICnZ2qFj4l495oZSgjAeIt82hUBWDVadfSFeUnv7JjBxpwbqkccQj1zHc6HITg7r_783NsHI_iZXsd8xZflXnXZ-9FVtTjRYPvoqYVAoLlf4OqHvC5EJdoD1ZSUIRXO4u9KIolbKoiEahbWYpmIpw4zah88MwpkLtJt6sB3zLO5eubVFsCNWbtU9uQBVyUDnkJNF69bZYjUSetp27OgggsT2WfMZ-3rsP8qH-wauPzpJlg;lc-acbin=en_IN;sess-at-acbin="bXZvMD3QLCiKsTiD518DZyj4bqpIvEYCCdZXOqctOUU=";sst-acbin=Sst1|PQFPQZyK-PfdZkOj6rzHmMcoCWbaW5fz_sb61CDlRvMJHWoE4Z1vessVtn_Jmfn7jnaGr2Cwcj0f6Ri6P-qugvgSoQJagZLXQr38NuZi1EyvlXYcS4CJeIPpjEz9rVbHkDgMaZbmuKDIGDPZS1ghl7CLo-ZIkLtpGdBx80Ci9f5IvENUxSgsr0Y_r-HhZcnVu79PAWk0FDdeYHdKtvdXcm7k_7d-4Qucf6De5WFE_lsit545o5uFQ0bvwiWQShgaEVBxdU7yxQVrSxZiLq1xF3JJvMBR6WEANUqLmUI6Pzve71U')
 BROADCAST_AS_COPY = os.getenv("BROADCAST_AS_COPY", "True").lower() == "true"
